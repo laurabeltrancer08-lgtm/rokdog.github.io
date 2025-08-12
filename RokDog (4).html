@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>RokDog</title>
+  <link rel="stylesheet" href="estilos rokdog (1).css">
+  <link rel="icon" type="image/icon" href="https://i.postimg.cc/ZYL0GvXf/Recurso-2.png" width="70" height="70">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+  <div class="notification" id="notification">
+    Producto agregado al carrito
+  </div>
+
+  <div class="navegador">
+    <div class="logo-buscador">
+      <a href="#" class="logo">
+        <img src="https://i.postimg.cc/wM9Mt9Rc/Recurso-1.png" width="200" height="40">
+      </a>
+      <div class="buscador">
+        <input type="text" placeholder="Buscar productos...">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+    
+    <div class="iconos">
+      <div class="icono icono-usuario">
+        <i class="fas fa-user"></i>
+        <span id="usuario-texto">Iniciar sesión</span>
+        <div class="usuario-menu">
+          <h3>Mi cuenta</h3>
+          <ul>
+           <li><a href="iniciar sesion.html" target="_blank"><i class="fas fa-sign-in-alt"></i>Iniciar sesión</a></li>
+            <li><a href="registrarse.html" target="_blank"><i class="fas fa-user-plus"></i> Registrarse</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="icono icono-favoritos">
+        <i class="fas fa-heart"></i>
+        <span>Favoritos</span>
+        <div class="favoritos-menu">
+          <h3>Tus favoritos</h3>
+          <ul>
+            <li>
+              <div class="favorito-item">
+                <img src="https://i.postimg.cc/xTwTCVBC/2626-Smartbones-Pollo-Mini-8-Unidades-500-X500-removebg-preview.png" width="50" height="50">
+                <span>Smartbones Pollo Mini</span>
+                <button class="add-to-cart-fav" data-name="Smartbones Pollo Mini X 8 Unidades">Añadir</button>
+              </div>
+            </li>
+            <li>
+              <div class="favorito-item">
+                <img src="https://i.postimg.cc/XYFsd9qW/463-62519-Royal-Canin-Medium-Adulto-1616625484-2186x2186-removebg-preview.png" width="50" height="50">
+                <span>Royal Canin Medium</span>
+                <button class="add-to-cart-fav" data-name="Royal Canin - Medium Adult">Añadir</button>
+              </div>
+            </li>
+            <li>
+              <div class="favorito-item">
+                <img src="https://i.postimg.cc/pdSMrD6H/2d3e5bc54e7edd029a290fa69193397b-1673042473-removebg-preview.png" width="50" height="50">
+                <span>Besties Huesos</span>
+                <button class="add-to-cart-fav" data-name="Besties-Huesos Masticables Medianos">Añadir</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="icono icono-tema">
+        <i class="fas fa-moon"></i>
+        <span>Modo</span>
+      </div>
+      
+      <div class="icono icono-carrito">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Carrito</span>
+        <div class="contador-carrito" id="contadorCarrito">2</div>
+        <div class="carrito-menu">
+          <h3>Tu carrito</h3>
+          <div class="carrito-items" id="carritoItems">
+            <div class="carrito-item">
+              <img src="https://i.postimg.cc/xTwTCVBC/2626-Smartbones-Pollo-Mini-8-Unidades-500-X500-removebg-preview.png" alt="Producto">
+              <div class="carrito-item-info">
+                <div class="carrito-item-titulo">Smartbones Pollo Mini X 8 Unidades</div>
+                <div class="carrito-item-precio">$18.360</div>
+              </div>
+            </div>
+            <div class="carrito-item">
+              <img src="https://i.postimg.cc/XYFsd9qW/463-62519-Royal-Canin-Medium-Adulto-1616625484-2186x2186-removebg-preview.png" alt="Producto">
+              <div class="carrito-item-info">
+                <div class="carrito-item-titulo">Royal Canin - Medium Adult</div>
+                <div class="carrito-item-precio">$30.000</div>
+              </div>
+            </div>
+          </div>
+          <div class="carrito-total">
+            <span>Total:</span>
+            <span id="carritoTotal">$48.360</span>
+          </div>
+          <div class="carrito-acciones">
+            <button class="carrito-vaciar" id="vaciarCarrito">Vaciar</button>
+            <button class="carrito-comprar" id="comprarCarrito">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+
+
+
+  
+
+  <div class="container-principal">
+    <section id="hero">
+      <div class="titulo-hero1">
+      <h1><br>MASCOTAS FELICES,<br> DUEÑOS FELICES</h1>
+       <h2>¡Ven y descubre!</h2>
+      <button>Comprar ahora </button>
+      </div>
+    </section>
+<section id="categoria">
+ 
+            <div class="categoria-titulo">
+      <h3>Categorías</h3>
+   </div>
+      <div class="categoria-container">
+       
+ 
+   <br>
+        <div class="categoria-column">
+          <div class="categoria-header">          
+          <img src="https://i.postimg.cc/QtpC70h2/comida.png" alt="comida" class="categoria-imagen"width="120" height="130">
+          <br>
+          <button>Alimento</button>
+        </div>
+        </div>
+
+        <div class="categoria-column">
+          <div class="categoria-header"> 
+          <img src="https://i.postimg.cc/h41hPyCx/juguetes.png" alt="juguetes" class="categoria-imagen"width="150" height="130">
+          <br>
+          <button>Juguetes</button>
+          </div>
+          
+        </div>
+
+        <div class="categoria-column">
+          <div class="categoria-header">
+            <img src="https://i.postimg.cc/nc688Zv1/accesorios.png" alt="Accesorios" class="categoria-imagen"width="100" height="130">
+            <br>
+            <button>Accesorios</button>
+          </div>
+
+        </div>
+
+        <div class="categoria-column">
+          <div class="categoria-header">
+          <img src="https://i.postimg.cc/FHcMNqpX/cosm-ticos.png" alt="Cosméticos" class="categoria-imagen" width="120" height="130">
+          <br>
+          <button>Cosméticos</button>
+          </div>
+          
+          
+          
+        </div>
+
+      </div>
+    </section>
+
+    <section id="hero2">
+   <div class="titulo-hero2">
+   <h1>PORQUE TU PELUDO<br>MERECE LO MEJOR</h1>
+      <h2>Encuentra todo en un solo lugar</h2>
+   </div>
+   
+    </section>
+
+    <section class="informacíon">
+      <div class="container">
+        <div class="column">
+          <img src="https://i.postimg.cc/8cLQMvWq/box-3638942.png" width="70" height="70" alt="Entrega">
+          <h4>Entregas el mismo día</h4>
+          <p>¡Todo lo que buscas, <br> entregado rápido y a tiempo!</p>
+        </div>
+        <div class="column">
+          <img src="https://i.postimg.cc/HkdcJ4X1/shopping-bag-4848260-1.png" width="70" height="70" alt="Productos">
+          <h4>Todo lo que necesitas</h4>
+          <p>Gran variedad de productos. <br>¡Todo lo que necesitas está aquí!</p>
+        </div>
+        <div class="column">
+          <img src="https://i.postimg.cc/wBpSvV4y/purchase-7248467-1.png" width="70" height="70" alt="Pago seguro">
+          <h4>Pago seguro</h4>
+          <p>¡Nequi o pagos contra entrega, <br> siempre seguro y conveniente!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="hero3">
+      <div class="titulo-hero3">
+ <h1>HAZ FELIZ A TU PERRO,<br>QUE LA DIVERSIÓN NO FALTE</h1>
+      <h2>Lo mejor para jugar lo encuentras aquí</h2>
+      </div>
+     
+    </section>
+
+<section id="Favoritos">
+ 
+            <div class="Favoritos-titulo">
+      <h3>Favoritos RokDog</h3>
+   </div>
+      <div class="Favoritos-container">
+       
+ 
+   <br>
+        <div class="Favoritos-column">
+          <div class="Favoritos-header">          
+          <img src="https://i.postimg.cc/xTwTCVBC/2626-Smartbones-Pollo-Mini-8-Unidades-500-X500-removebg-preview.png"class="Favoritos-imagen" width="100" height="100">
+          <br>
+          <h5>Smartbones Pollo Mini X 8 Unidades</h5>
+          <h5>$18.360</h5>
+          <br>
+        <button class="add-to-cart-fav" data-name="Smartbones Pollo Mini X 8 Unidades">Comprar</button>
+        </div>
+        </div>
+
+        <div class="Favoritos-column">
+          <div class="Favoritos-header"> 
+          <img src="https://i.postimg.cc/pdSMrD6H/2d3e5bc54e7edd029a290fa69193397b-1673042473-removebg-preview.png"class="Favoritos-imagen" width="100" height="100">
+          <br>
+          <h5>Besties-Huesos Masticables Medianos</h5>
+          <h5>$15.000</h5>
+          <br>
+          <button class="add-to-cart-fav" data-name="Besties-Huesos Masticables Medianos">Comprar</button>
+          </div>
+          
+        </div>
+
+        <div class="Favoritos-column">
+          <div class="Favoritos-header">
+          <img src="https://i.postimg.cc/XYFsd9qW/463-62519-Royal-Canin-Medium-Adulto-1616625484-2186x2186-removebg-preview.png"class="Favoritos-imagen" width="100" height="100">
+          <br>
+          <h5>Royal Canin - Medium Adult</h5>
+          <h5>$30.000</h5>
+          <br>
+         <button class="add-to-cart-fav" data-name="Royal Canin - Medium Adult">Comprar</button>
+          </div>
+
+        </div>
+
+        <div class="Favoritos-column">
+          <div class="Favoritos-header">
+          <img src="https://i.postimg.cc/K8n5RFpv/4156c65bbc6a0f7539f438fa57ef595f-1715718727-removebg-preview.png" class="Favoritos-imagen" width="200" height="200">
+          <br>
+          <h5>Pedigree-Alimento Húmedo Raza Pequeña</h5>
+          <h5>$2.380</h5>
+          <br>
+          <button class="add-to-cart-fav" data-name="Pedigree-Alimento Húmedo Raza Pequeña">Comprar</button>
+        </div>
+          </div>
+        
+          
+        </div>
+
+      </div>
+    </section>
+
+
+ 
+  
+ <section class="video-section" style="padding: 40px 0; background-color: #ffffff; text-align: center;">
+      <div class="video-container" style="max-width: 800px; margin: 0 auto;">
+        <h3 style="font-size: 2rem; margin-bottom: 20px; color: #FE7703;">Conoce más sobre DogChow</h3>
+        <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2Zo_MINsPJ4" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        </div>
+      </div>
+    </section>
+
+
+ <footer class="rokdog-footer">
+  <div class="footer-bg-image"></div>
+  <div class="footer-content">
+    
+    <div class="footer-column logo-social">
+      <div class="logo-container">
+        <img src="https://i.postimg.cc/LXB0XTB9/Recurso-3.png" alt="ROKDOG Logo" class="footer-logo">
+      </div>
+      <p class="follow-text">Porque tu mascota merece lo mejor<br> Síguenos en:</p>
+      <div class="social-icons">
+        <a href="#"><img src="https://i.postimg.cc/3Rh6Y6Gg/facebook-187189.png" alt="Facebook" class="social-img"></a>
+        <a href="#"><img src="https://i.postimg.cc/B6ZghGDw/social-15528043.png" alt="Instagram" class="social-img"></a>
+      </div>
+    </div>
+    
+   
+    <div class="footer-column info-column">
+      <h6 class="footer-title">INFORMACIÓN</h6>
+      <h7 class="footer-text">TELÉFONO: 3122903059</h7><br>
+      <h7 class="footer-text">BARRANQUILLA, COLOMBIA</h7>
+    </div>
+
+    <div class="footer-column contact-column">
+       <h6 class="footer-title">CANALES DE ATENCIÓN</h6>
+      <h7 class="footer-text">preguntasrokdog@gmail.com</h7>
+    </div>
+</footer>
+
+<script>
+  // Datos del carrito
+  let carrito = [
+    {
+      nombre: "Smartbones Pollo Mini X 8 Unidades",
+      precio: 18360,
+      imagen: "https://i.postimg.cc/xTwTCVBC/2626-Smartbones-Pollo-Mini-8-Unidades-500-X500-removebg-preview.png"
+    },
+    {
+      nombre: "Royal Canin - Medium Adult",
+      precio: 30000,
+      imagen: "https://i.postimg.cc/XYFsd9qW/463-62519-Royal-Canin-Medium-Adulto-1616625484-2186x2186-removebg-preview.png"
+    }
+  ];
+
+  // Función para mostrar notificación
+  function showNotification(message) {
+    const notification = document.getElementById('notification');
+    notification.textContent = message;
+    notification.style.display = 'block';
+    
+    setTimeout(() => {
+      notification.style.display = 'none';
+    }, 3000);
+  }
+
+  // Función para actualizar el carrito
+  function actualizarCarrito() {
+    const carritoItems = document.getElementById('carritoItems');
+    const contadorCarrito = document.getElementById('contadorCarrito');
+    const carritoTotal = document.getElementById('carritoTotal');
+    
+    // Limpiar items
+    carritoItems.innerHTML = '';
+    
+    // Calcular total
+    let total = 0;
+    
+    // Agregar items
+    carrito.forEach(item => {
+      total += item.precio;
+      
+      const itemHTML = `
+        <div class="carrito-item">
+          <img src="${item.imagen}" alt="${item.nombre}">
+          <div class="carrito-item-info">
+            <div class="carrito-item-titulo">${item.nombre}</div>
+            <div class="carrito-item-precio">$${item.precio.toLocaleString()}</div>
+          </div>
+        </div>
+      `;
+      carritoItems.innerHTML += itemHTML;
+    });
+    
+    // Actualizar contador y total
+    contadorCarrito.textContent = carrito.length;
+    carritoTotal.textContent = `$${total.toLocaleString()}`;
+  }
+
+  // Función para vaciar el carrito
+  function vaciarCarrito() {
+    carrito = [];
+    actualizarCarrito();
+    showNotification('Carrito vaciado');
+  }
+
+  // Función para añadir al carrito
+  function agregarAlCarrito(nombre, precio, imagen) {
+    carrito.push({ nombre, precio, imagen });
+    actualizarCarrito();
+    showNotification(`${nombre} agregado al carrito`);
+  }
+
+  // Función para comprar
+  function comprarCarrito() {
+    if (carrito.length === 0) {
+      showNotification('El carrito está vacío');
+      return;
+    }
+    
+    showNotification('Compra realizada con éxito');
+    carrito = [];
+    actualizarCarrito();
+  }
+
+  // Eventos al cargar la página
+  document.addEventListener('DOMContentLoaded', () => {
+    // Inicializar carrito
+    actualizarCarrito();
+    
+    // Evento para botones "Comprar" en productos
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', (e) => {
+        const nombre = e.target.getAttribute('data-name');
+        const precio = parseInt(e.target.parentElement.querySelector('h5:nth-child(3)').textContent.replace('$','').replace('.',''));
+        const imagen = e.target.parentElement.querySelector('img').src;
+        agregarAlCarrito(nombre, precio, imagen);
+      });
+    });
+    
+    // Evento para botones "Añadir" en favoritos
+    document.querySelectorAll('.add-to-cart-fav').forEach(button => {
+      button.addEventListener('click', (e) => {
+        const nombre = e.target.getAttribute('data-name');
+        // Precio simulado para los favoritos (deberías tener estos datos)
+        const precio = nombre.includes('Smartbones') ? 18360 : 
+                      nombre.includes('Royal Canin') ? 30000 : 15000;
+        const imagen = e.target.parentElement.querySelector('img').src;
+        agregarAlCarrito(nombre, precio, imagen);
+      });
+    });
+    
+    // Evento para vaciar carrito
+    document.getElementById('vaciarCarrito').addEventListener('click', vaciarCarrito);
+    
+    // Evento para comprar
+    document.getElementById('comprarCarrito').addEventListener('click', comprarCarrito);
+    
+    // Modo oscuro (mantenido de implementación anterior)
+    const darkMode = localStorage.getItem('darkMode') === 'true';
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+    }
+    
+    document.querySelector('.icono-tema').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    });
+  });
+</script>
+ 
+
+
+</body>
+</html>
+
+</body>
+</html>

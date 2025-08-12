@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a.registro-button {
+  background-color: #ff7a00;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  height: 90%;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.form-section {
+  background-color: #fff4b1;
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom-left-radius: 30px;
+}
+
+.form-section h2 {
+  color: #ff7a00;
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input {
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffe6a7;
+  color: #c78500;
+  font-size: 14px;
+}
+
+form input::placeholder {
+  color: #c78500;
+}
+
+form button {
+  background-color: #ff7a00;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.image-section {
+  flex: 1;
+  background-color: #fca311;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+}
